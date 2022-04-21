@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HotelViewController">
+   <children>
+      <TableView fx:id="tablehotel" layoutX="354.0" layoutY="28.0" prefHeight="392.0" prefWidth="805.0">
+         <columns>
+            <TableColumn fx:id="colnom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="collocalisation" prefWidth="82.0" text="Loacalisation" />
+            <TableColumn fx:id="coldescription" prefWidth="169.0" text="Description" />
+            <TableColumn fx:id="colemail" prefWidth="145.0" text="Email" />
+            <TableColumn fx:id="colnbr_chambre" prefWidth="103.0" text="Nombre de chambres" />
+            <TableColumn fx:id="colimage" prefWidth="230.0" text="Image" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tfimage" layoutX="179.0" layoutY="265.0" />
+      <TextField fx:id="tfnbr_chambre" layoutX="179.0" layoutY="229.0" />
+      <TextField fx:id="tfemail" layoutX="179.0" layoutY="191.0" />
+      <TextField fx:id="tfdescription" layoutX="179.0" layoutY="147.0" />
+      <TextField fx:id="tflocalisation" layoutX="179.0" layoutY="104.0" />
+      <TextField fx:id="tfnom" layoutX="179.0" layoutY="68.0" />
+      <TextField fx:id="tfid" editable="false" layoutX="179.0" layoutY="28.0" />
+      <Label layoutX="24.0" layoutY="269.0" text="Image :" />
+      <Label layoutX="24.0" layoutY="234.0" text="Nombre de chambres :" />
+      <Label layoutX="26.0" layoutY="195.0" text="Email :" />
+      <Label layoutX="26.0" layoutY="152.0" text="Description :" />
+      <Label layoutX="32.0" layoutY="109.0" text="Localisation : " />
+      <Label layoutX="32.0" layoutY="73.0" text="Nom : " />
+      <Label layoutX="36.0" layoutY="33.0" text="ID:" />
+      <Button fx:id="btnajout" layoutX="24.0" layoutY="368.0" mnemonicParsing="false" onAction="#ajouterhotel" text="Ajouter" />
+      <Button fx:id="btnmodifier" layoutX="104.0" layoutY="368.0" mnemonicParsing="false" onAction="#modifierhotel" text="Modifier" />
+      <Button fx:id="btndelete" layoutX="199.0" layoutY="368.0" mnemonicParsing="false" onAction="#deletehotel" text="Delete" />
+   </children>
+</AnchorPane>

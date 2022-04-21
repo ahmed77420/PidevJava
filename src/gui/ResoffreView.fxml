@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ResoffreViewController">
+   <children>
+      <TextField fx:id="tfid" editable="false" layoutX="170.0" layoutY="108.0" />
+      <Label layoutX="45.0" layoutY="110.0" prefHeight="20.0" prefWidth="53.0" text="ID" />
+      <Button fx:id="delete" layoutX="272.0" layoutY="434.0" mnemonicParsing="false" onAction="#delete_resoffre" text="Delete" />
+      <Button fx:id="update" layoutX="170.0" layoutY="434.0" mnemonicParsing="false" onAction="#update_resoffre" text="Update" />
+      <Button fx:id="create" layoutX="69.0" layoutY="434.0" mnemonicParsing="false" onAction="#create_resoffre" text="Add" />
+      <Label layoutX="45.0" layoutY="327.0" prefHeight="20.0" prefWidth="78.0" text="Offre" />
+      <Label layoutX="45.0" layoutY="268.0" prefHeight="20.0" prefWidth="86.0" text="Client" />
+      <Label layoutX="45.0" layoutY="211.0" prefHeight="20.0" prefWidth="93.0" text="Date reservation" />
+      <TextField fx:id="tfnbrplace" layoutX="170.0" layoutY="159.0" />
+      <Label layoutX="45.0" layoutY="159.0" prefHeight="20.0" prefWidth="78.0" text="Nbr de place" />
+      <TableView fx:id="tableresoffre" layoutX="366.0" layoutY="68.0" prefHeight="525.0" prefWidth="809.0">
+         <columns>
+            <TableColumn fx:id="colclient" prefWidth="130.0" text="Client" />
+            <TableColumn fx:id="coloffre" prefWidth="178.0" text="Offre" />
+            <TableColumn fx:id="coldateres" prefWidth="149.0" text="Date reservation" />
+            <TableColumn fx:id="colnbrdeplace" prefWidth="351.0" text="Nbr de place" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="tfdateres" layoutX="170.0" layoutY="209.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="comboclient" layoutX="170.0" layoutY="266.0" prefWidth="150.0" />
+      <ComboBox fx:id="combooffre" layoutX="170.0" layoutY="325.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
